@@ -1,0 +1,40 @@
+<!DOCTYPE html> <html> <head> 
+    <title>Button Page</title> <style>
+        .button-container { display: flex; 
+            justify-content: center; 
+            align-items: center; height: 
+            100vh; background-color: 
+            white; /* White background */
+        }
+        .button { margin: 20px; padding: 
+            30px 60px; /* Reduced padding 
+            for smaller buttons */ 
+            font-size: 28px; /* Reduced 
+            font size for a slightly 
+            smaller look */ 
+            background-color: #333333; /* 
+            Darker gray background */ 
+            color: white; border: none; 
+            border-radius: 10px; cursor: 
+            pointer; text-decoration: 
+            none; /* Remove default 
+            underline */
+        }
+    </style> </head> <body> <div 
+    class="button-container">
+        <button class="button" 
+        onclick="redirectToGame('sandboxels')">Sandboxels</button> 
+        <button class="button" 
+        onclick="redirectToGame('untrusted')">Untrusted</button> 
+        <button class="button" 
+        onclick="redirectToGame('flappy-bird')">Flappy 
+        Bird</button>
+    </div> <script> function 
+        redirectToGame(game) {
+            const baseUrl = 
+            "https://games.Ting-X.com/ecp/pass/"; 
+            const gameUrl = baseUrl + 
+            game; window.location.href = 
+            gameUrl;
+        }
+    </script> </body> </html>
